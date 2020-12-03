@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project5">
-        <activity android:name=".TicketsActivity"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".TicketsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label= "@string/Ticket_activity_title"
+            />
+        <activity android:name=".MainActivity"
+            android:label= "@string/Project_Header" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
