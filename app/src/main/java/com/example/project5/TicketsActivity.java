@@ -32,6 +32,9 @@ public class TicketsActivity extends AppCompatActivity {
         TicketPrice = findViewById(R.id.TicketPrice);
         TaxPrice = findViewById(R.id.TaxValue);
         TotalPrice = findViewById(R.id.TotalPrice);
+        TicketPrice.setKeyListener(null);
+        TotalPrice.setKeyListener(null);
+        TaxPrice.setKeyListener(null);
 
         spinner = findViewById(R.id.spinner);
         spinner2 = findViewById(R.id.spinner2);

@@ -15,10 +15,10 @@
         android:text="@string/amnh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/museumOfArt"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="@+id/museumOfArt"
         app:layout_constraintTop_toBottomOf="@+id/museumOfArt"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/museumOfArt"
@@ -30,10 +30,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/brooklyn"
-        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/brooklyn"
         app:layout_constraintTop_toBottomOf="@+id/brooklyn"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -51,11 +51,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:gravity="center"
         android:onClick="displayTickets"
         android:text="@string/brooklyn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/modernArt"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="@+id/modernArt"
         app:layout_constraintTop_toBottomOf="@+id/modernArt"
         app:layout_constraintVertical_bias="0.032" />
@@ -64,11 +65,12 @@
         android:id="@+id/modernArt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
         android:onClick="displayTickets"
         android:text="@string/Moma"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -77,14 +79,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
+        android:gravity="center|center_horizontal|center_vertical"
         android:onClick="displayTickets"
         android:text="@string/Project_Header"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006" />
+        app:layout_constraintVertical_bias="0.052" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

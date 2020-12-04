@@ -7,29 +7,30 @@
     tools:context=".TicketsActivity">
 
     <TextView
-        android:id="@+id/studentLabel"
+        android:id="@+id/SeniorLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/student"
-        app:layout_constraintEnd_toStartOf="@+id/senior"
-        app:layout_constraintHorizontal_bias="0.616"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/senior"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seniorLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/studentLabel" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="302dp"
         android:layout_height="22dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="324dp"
-        android:layout_height="208dp"
+        android:layout_width="304dp"
+        android:layout_height="161dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/musuem_picture"
         android:onClick="goToWebsite"
@@ -41,47 +42,44 @@
 
     <TextView
         android:id="@+id/adult"
-        android:layout_width="60dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
-        app:layout_constraintHorizontal_bias="0.871"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/student"
-        android:layout_width="60dp"
-        android:layout_height="39dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner2"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/studentLabel"
         app:layout_constraintTop_toBottomOf="@+id/adult" />
 
     <TextView
         android:id="@+id/senior"
-        android:layout_width="60dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner3"
-        app:layout_constraintHorizontal_bias="0.871"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/SeniorLabel"
         app:layout_constraintTop_toBottomOf="@+id/student" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="112dp"
         android:layout_height="39dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:background="@color/purple_200"
         android:entries="@array/Tickets"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
@@ -90,89 +88,107 @@
         android:id="@+id/spinner2"
         android:layout_width="112dp"
         android:layout_height="39dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/purple_200"
         android:entries="@array/Tickets"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/student"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="112dp"
         android:layout_height="39dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/purple_200"
         android:entries="@array/Tickets"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/senior"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
-
-    <TextView
-        android:id="@+id/TicketPrice"
-        android:layout_width="243dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="92dp"
-        android:text="@string/ticket_price"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
-
-    <TextView
-        android:id="@+id/TaxValue"
-        android:layout_width="241dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tax"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TicketPrice" />
-
-    <TextView
-        android:id="@+id/TotalPrice"
-        android:layout_width="232dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/price"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TaxValue"
-        app:layout_constraintVertical_bias="0.059" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="28dp"
         android:onClick="calculatePrice"
         android:text="@string/submitButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/studentLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/SeniorLabel" />
 
     <TextView
         android:id="@+id/AdultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="@string/adult"
         app:layout_constraintEnd_toStartOf="@+id/adult"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
-        android:id="@+id/seniorLabel"
+        android:id="@+id/studentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/senior"
-        app:layout_constraintEnd_toStartOf="@+id/student"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/student"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AdultLabel" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:hint="@string/ticket_price"
+        android:translationY="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TicketPrice"
+            android:layout_width="112dp"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="61dp"
+        android:hint="@string/price"
+        android:translationY="-60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TotalPrice"
+            android:layout_width="112dp"
+            android:layout_height="60dp"
+            android:paddingBottom="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:hint="@string/tax"
+        android:translationY="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TaxValue"
+            android:layout_width="112dp"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
