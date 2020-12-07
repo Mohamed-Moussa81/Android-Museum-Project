@@ -1,27 +1,30 @@
 <resources>
     <string name="app_name">project5</string>
     <string name="Project_Header">NYC Museum Tickets</string>
-    <string name = "Project_Title"> NYC Museums</string>
-    <string name = "Moma"> Museum of Modern Art</string>
-    <string name = "momaURL">https://www.moma.org/ </string>
-    <string name = "amnh"> American Museum of Natural History</string>
-    <string name = "amnhURL">https://www.amnh.org/</string>
-    <string name = "brooklyn">Brooklyn Museum </string>
-    <string name = "brooklynURL">https://www.brooklynmuseum.org/</string>
-    <string name = "met"> The Metropolitan Museum of Art</string>
-    <string name = "metURL"> https://www.metmuseum.org/</string>
-    <string name ="Ticket_activity_title"> Tickets for Purchase</string>
-    <string name = "Ticket_purchase"> Tickets Available </string>
-    <string name = "adult"> Adult Ticket</string>
-    <string name = "student"> Student Ticket</string>
-    <string name = "senior"> Senior Ticket</string>
-    <string name = "ticket_price"> Ticket Price</string>
-    <string name = "tax"> Sales Tax</string>
-    <string name = "price"> Total Price</string>
-    <string name = "toastMessage"> Maximum of 5 tickets for each!</string>
+    <string name="Project_Title"> NYC Museums</string>
+    <string name="Moma"> Museum of Modern Art</string>
+    <string name="momaURL">https://www.moma.org/ </string>
+    <string name="amnh"> American Museum of Natural History</string>
+    <string name="amnhURL">https://www.amnh.org/</string>
+    <string name="brooklyn">Brooklyn Museum </string>
+    <string name="brooklynURL">https://www.brooklynmuseum.org/</string>
+    <string name="met"> The Metropolitan Museum of Art</string>
+    <string name="metURL"> https://www.metmuseum.org/</string>
+    <string name="Ticket_activity_title"> Tickets for Purchase</string>
+    <string name="Ticket_purchase"> Tickets Available </string>
+    <string name="adult"> Adult Ticket</string>
+    <string name="student"> Student Ticket</string>
+    <string name="senior"> Senior Ticket</string>
+    <string name="ticket_price"> Ticket Price</string>
+    <string name="tax"> Sales Tax</string>
+    <string name="price"> Total Price</string>
+    <string name="toastMessage"> Maximum of 5 tickets for each!</string>
+    <string name="mainToastMessage">Please select a museum to view its ticket information.</string>
     <string name="musuem_picture">Musuem Picture</string>
     <string name="submitButton">Submit</string>
-
+    <string name="main_desc">Please select a museum to view its ticket information.</string>
+    <string name="map_desc">Map of NYC</string>
+    <string name="circle_desc">circle used to pinpoint the museums on the map</string>
 
     <string-array name="Tickets">
         <item> 0 </item>
@@ -31,4 +34,5 @@
         <item> 4</item>
         <item> 5</item>
     </string-array>
+
 </resources>

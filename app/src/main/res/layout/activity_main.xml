@@ -1,93 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/naturalHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:onClick="displayTickets"
         android:text="@string/amnh"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/museumOfArt"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="@+id/museumOfArt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/museumOfArt"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.004" />
 
     <TextView
         android:id="@+id/museumOfArt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:onClick="displayTickets"
         android:text="@string/met"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/brooklyn"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/brooklyn"
-        app:layout_constraintTop_toBottomOf="@+id/brooklyn"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="672dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brooklyn" />
 
     <TextView
         android:id="@+id/brooklyn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:gravity="center"
         android:onClick="displayTickets"
         android:text="@string/brooklyn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/modernArt"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="@+id/modernArt"
-        app:layout_constraintTop_toBottomOf="@+id/modernArt"
-        app:layout_constraintVertical_bias="0.032" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modernArt" />
 
     <TextView
         android:id="@+id/modernArt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:onClick="displayTickets"
         android:text="@string/Moma"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_desc" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/main_desc"
+        android:layout_width="355dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_desc"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nyc_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:onClick="displayTickets"
-        android:text="@string/Project_Header"
-        android:textSize="24sp"
+        android:contentDescription="@string/map_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toBottomOf="@+id/naturalHistory"
+        app:layout_constraintVertical_bias="0.135"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/pink_cir1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintEnd_toStartOf="@+id/modernArt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_desc"
+        app:srcCompat="@drawable/pnk_cir" />
+
+    <ImageView
+        android:id="@+id/pink_cir2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintEnd_toEndOf="@+id/nyc_map"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/nyc_map"
+        app:layout_constraintTop_toTopOf="@+id/nyc_map"
+        app:srcCompat="@drawable/pnk_cir" />
+
+    <ImageView
+        android:id="@+id/blue_cir1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintEnd_toStartOf="@+id/brooklyn"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pink_cir1"
+        app:srcCompat="@drawable/blue_cir" />
+
+    <ImageView
+        android:id="@+id/blue_cir2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/nyc_map"
+        app:layout_constraintEnd_toEndOf="@+id/nyc_map"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/nyc_map"
+        app:layout_constraintTop_toTopOf="@+id/nyc_map"
+        app:layout_constraintVertical_bias="0.609"
+        app:srcCompat="@drawable/blue_cir" />
+
+    <ImageView
+        android:id="@+id/yellow_cir1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintEnd_toStartOf="@+id/museumOfArt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blue_cir1"
+        app:srcCompat="@drawable/yellow_cir" />
+
+    <ImageView
+        android:id="@+id/yellow_cir2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/nyc_map"
+        app:layout_constraintEnd_toEndOf="@+id/nyc_map"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/nyc_map"
+        app:layout_constraintTop_toTopOf="@+id/nyc_map"
+        app:layout_constraintVertical_bias="0.387"
+        app:srcCompat="@drawable/yellow_cir" />
+
+    <ImageView
+        android:id="@+id/red_cir1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintEnd_toStartOf="@+id/naturalHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow_cir1"
+        app:srcCompat="@drawable/red_cir" />
+
+    <ImageView
+        android:id="@+id/red_cir2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:contentDescription="@string/circle_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/nyc_map"
+        app:layout_constraintEnd_toEndOf="@+id/nyc_map"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/nyc_map"
+        app:layout_constraintTop_toTopOf="@+id/nyc_map"
+        app:layout_constraintVertical_bias="0.364"
+        app:srcCompat="@drawable/red_cir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
