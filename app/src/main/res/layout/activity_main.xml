@@ -5,96 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/naturalHistory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="displayTickets"
-        android:text="@string/amnh"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/museumOfArt"
-        app:layout_constraintVertical_bias="0.004" />
-
-    <TextView
-        android:id="@+id/museumOfArt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="displayTickets"
-        android:text="@string/met"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/brooklyn" />
-
-    <TextView
-        android:id="@+id/brooklyn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:onClick="displayTickets"
-        android:text="@string/brooklyn"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/modernArt" />
-
-    <TextView
-        android:id="@+id/modernArt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:onClick="displayTickets"
-        android:text="@string/Moma"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_desc" />
-
-    <TextView
-        android:id="@+id/main_desc"
-        android:layout_width="355dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/main_desc"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/nyc_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:contentDescription="@string/map_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/naturalHistory"
-        app:layout_constraintVertical_bias="0.135"
         app:srcCompat="@drawable/map" />
 
     <ImageView
         android:id="@+id/pink_cir1"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="@string/circle_desc"
-        app:layout_constraintEnd_toStartOf="@+id/modernArt"
+        app:layout_constraintBottom_toTopOf="@+id/yellow_cir1"
+        app:layout_constraintEnd_toStartOf="@+id/listview"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_desc"
         app:srcCompat="@drawable/pnk_cir" />
 
     <ImageView
@@ -113,12 +44,12 @@
         android:id="@+id/blue_cir1"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="@string/circle_desc"
-        app:layout_constraintEnd_toStartOf="@+id/brooklyn"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintBottom_toTopOf="@+id/red_cir1"
+        app:layout_constraintEnd_toStartOf="@+id/listview"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pink_cir1"
         app:srcCompat="@drawable/blue_cir" />
 
     <ImageView
@@ -138,11 +69,12 @@
         android:id="@+id/yellow_cir1"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="@string/circle_desc"
-        app:layout_constraintEnd_toStartOf="@+id/museumOfArt"
+        app:layout_constraintBottom_toTopOf="@+id/blue_cir1"
+        app:layout_constraintEnd_toStartOf="@+id/listview"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blue_cir1"
         app:srcCompat="@drawable/yellow_cir" />
 
     <ImageView
@@ -162,11 +94,12 @@
         android:id="@+id/red_cir1"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="68dp"
         android:contentDescription="@string/circle_desc"
-        app:layout_constraintEnd_toStartOf="@+id/naturalHistory"
+        app:layout_constraintBottom_toTopOf="@+id/nyc_map"
+        app:layout_constraintEnd_toStartOf="@+id/listview"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yellow_cir1"
         app:srcCompat="@drawable/red_cir" />
 
     <ImageView
@@ -181,5 +114,18 @@
         app:layout_constraintTop_toTopOf="@+id/nyc_map"
         app:layout_constraintVertical_bias="0.364"
         app:srcCompat="@drawable/red_cir" />
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="320dp"
+        android:layout_height="202dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/nyc_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
